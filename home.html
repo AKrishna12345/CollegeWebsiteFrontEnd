@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>College Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+  
+    <h2> Section 1: Academics and Personal Information</h2>
+    <form action="calculate">
+      <p> What is your gpa?(rounded to nearest hundreth)</p>
+      <input type="number" step="0.01" id="gpa" placeholder="gpa" name="gpa" required>
+     <p> What is the max gpa at your school?(rounded to nearest hundreth)</p>
+      <input type="number" step="0.01" id="maxgpa" placeholder="maxgpa" name="maxgpa" required>
+      <p> Rank your extracurriculurs from 1-10</p>
+      <input type="number" step="0.01" id="extra" placeholder="extracurricular" name="extra" required>
+      <p> What is your SAT Score? Enter 0 if NA</p>
+      <input type="number" step="1" id="sat" placeholder="sat" name="sat" required>
+      <p> What is your ACT Score? Enter 0 if NA</p>
+      <input type="number" step="1" id="act" placeholder="act" name="act" required>
+      <p> what is most similar to your intended major?</p>
+      <select name="major" id="major" required>
+         
+      <option value="computerScience">computerScience</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Science">Science</option>
+      <option value="Humanities">Humanities</option>
+      <option value="Business">Business</option>
+      <option value="Math">Math</option>
+      <option value="Other">Other</option>
+   </select>
+        <p> Are you one of the following races: Asian, White, Indian?(Y/N)</p>
+      <input type="text" id="minority" placeholder="Y/N" name="minority" required>
+        <p> Are you the first in your family to go to college?(Y/N)</p>
+      <input type="text" id="firstGen" placeholder="Y/N" name="firstGen" required>
+      
+    </select>
+      <h2>Section 2: Preferences</h2>
+      What is your ideal college size<br>
+  <input type="checkbox" value="small2"name="small" id=smallSize> small<br>
+  <input type="checkbox" value="medium"name="medium"  id=mediumSize> medium<br>
+  <input type="checkbox" value="large"name="large"  id=largeSize> large<br>
+  <p> What is the maximum total cost(Room and Board) you are willing to pay for college per year? If you are ok with any price enter 80000</p>
+      <input type="number" step="1" id="maxtuition" name="maxtuition" placeholder="maxtuition" required><br>
+      <p> How important is diversity to you?</p>
+    <select name="diversity" id="diversity" required>
+         
+      <option value="VI"> Very Important</option>
+      <option value="SI">Somewhat Important</option>
+      <option value="NI">Not Important</option>
+      </select>
+  <br>
+     <img src="27999215.jpg" height="500">
+       
+       <p> Which of the above regions would you want to go to school in?</p>
+    <input type="checkbox" value="check"name="darkBlue" id=west>Dark Blue<br>
+  <input type="checkbox" value="check"name="lightBlue"  id=middle2>Light Blue<br>
+  <input type="checkbox" value="check"name="lightGreen" id=east>Light Green<br>
+  <input type="checkbox" value="check"name="darkGreen" id=west>Dark Green<br>
+  <input type="checkbox" value="check"name="darkRed"  id=middle2>Dark Red<br>
+  <input type="checkbox" value="check"name="lightRed" id=east>Light Red<br>
+  <input type="checkbox" value="check"name="orange" id=west>Orange<br>
+  <input type="checkbox" value="check"name="yellow"  id=middle2> Yellow<br>
+  
+      <p> What state do you live in?</p>
+      <input type="text" id="state" name="state"placeholder="State" required>
+  
+      <p> Would you like to stay in state?(Y/N/NA) Type NA if no preference</p>
+      <input type="text" id="stayState" name="stayState"placeholder="Y/N/NA" required>
+      
+      <p> How many schools do you want to apply to?</p>
+      <input type="number" max="30"step="1" id="numSchools" name="numSchools"placeholder="number of schools" required>
+      <button type="submit" id="submit" onclick="main()" >submit</button>
+  
+    </form>
+  
+    <script src="script.js"></script>
+  
+    
+    
+    
+  </body>
+  
+  </html>
